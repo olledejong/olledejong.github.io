@@ -1,0 +1,464 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css');
+
+
+@font-face {
+    font-family: Ubuntu-Regular;
+}
+
+@font-face {
+    font-family: Ubuntu-Bold;
+}
+
+/*////////////////////////////////////////////////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    font-family: Ubuntu, sans-serif;
+}
+
+body {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+/* NAV BAR */
+
+nav {
+    opacity: 1;
+    position: fixed;
+    z-index: 99;
+    left: -10px;
+    top: -37px;
+    color: white;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 140px;
+    transform: rotate(-0.8deg);
+    border-bottom: 6px solid lightgrey;
+    float: left;
+    width: 105%;
+}
+
+nav i {
+    display: none;
+}
+
+
+.left-part p {
+    display: block;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+.main-title {
+    margin-bottom: 6px;
+    float: left;
+    width: 400px;
+    font-size: 32px;
+    margin-top: 44px;
+    margin-left: 35px;
+    transform: rotate(0.8deg);
+    transition: 0.2s ease-out;
+}
+
+.subtitle {
+    letter-spacing: 2px;
+    font-weight: 400;
+    width: 400px;
+    margin-left: 35px;
+    transform: rotate(0.8deg);
+    font-size: 20px;
+    margin-top: 14px;
+    color: #73d38f;
+}
+
+.nav-links {
+    float: right;
+    top: -46px;
+    right: 0;
+    position: relative;
+    margin-right: 5%;
+    transform: rotate(0.8deg);
+    width: auto;
+    height: 35px;
+}
+
+.nav-links a {
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    z-index: 99;
+    cursor: pointer;
+    margin: 0 25px 0 0;
+    font-size: 24px;
+    display: inline-block;
+    float: right;
+    height: 35px;
+    transition: 0.2s ease-out;
+}
+
+
+.media-icons img {
+    height: auto;
+    width:30px;
+}
+
+.media-icons {
+    color: white;
+    float: right;
+    transform: rotate(0.8deg) translateX(-74%);
+    left: 50%;
+    top: 46%;
+    position: absolute;
+    height: 50px;
+    width: auto;
+}
+
+.media-icons img {
+    transition: 0.2s ease-out;
+}
+
+.icon {
+	margin: 0 25px 0 0;
+}
+
+.media-icons img:hover {
+    transform:scale(1.1);
+}
+
+.main-image {
+    top: 9vh;
+    position: absolute;
+    right: -16vw;
+    min-width: 55vw;
+    max-width: 62vw;
+    width:auto;
+    height: auto;
+}
+
+.frontpage-content {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    top: 30vh;
+    left: 12vw;
+    position: absolute;
+    float: right;
+    width: auto;
+    height: auto;
+}
+
+#frontpage-content-career {
+    top: 24vh;
+    left: 8vw;
+}
+
+.inner-frontpage-paragraph {
+    margin-top: 10px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    max-width: 500px;
+    width: auto;
+    color: slategray;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1 {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    width: 340px;
+    letter-spacing: 3px;
+    color: slategray;
+    text-align: left;
+}
+
+h2 {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    font-size: 19px;
+    color: slategray;
+    text-align: left;
+}
+
+.status-icon {
+    float:left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: mediumseagreen;
+    animation-name: none;
+}
+
+.working-on-it {
+	float: left;
+    margin-right: 10px;
+    font-size: 20px;
+    color: mediumseagreen;
+}
+
+.span-seagreen {
+    letter-spacing: 1px;
+    color: mediumseagreen;
+}
+
+.still-in-dev {
+    animation-name: slideInFromLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.105, 0.375, 0.470, 0.990);
+    font-size: 20px;
+    margin-top: 10px;
+    color: mediumseagreen;
+}
+
+.repo-link {
+    font-size: 20px;
+    color: mediumseagreen;
+    text-decoration: none;
+}
+
+.repo-link:hover {
+    transform: translateX(5px);
+    border-bottom: 3px solid mediumseagreen;
+}
+
+.nav-links a:hover {
+    border-bottom: 4px solid mediumseagreen;
+}
+
+.container {
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.skills {
+    border-radius: 20px;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.html {width: 85%; background-color: #8BD095;}
+.css {width: 85%; background-color: #8BD095;}
+.js {width: 80%; background-color: #8BD095;}
+.java {width: 80%; background-color: #8BD095;}
+.python {width: 70%; background-color: #8BD095;}
+.r {width: 70%; background-color: #8BD095;}
+.sql {width: 70%; background-color: #8BD095;}
+
+.skills-container p {
+    margin-top: 10px;
+	color: slategray;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ ANIMATIONS ]*/
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes slideInFromLeft {
+  0% {margin-left: -300px;
+    opacity: 0.3}
+  100% {margin-left: 0;
+    opacity: 1}
+}
+
+footer {
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    background-color: lightgrey;
+    opacity: 0.6;
+    bottom: 0;
+}
+
+footer span {
+    margin: 14px 0 0 25px;
+    font-size: 14px;
+    display: inline-block; 
+    float: left;
+    height: 35px;
+    transition: 0.2s ease-out;
+}
+
+/*///////////////////////////[ DYNAMIC PART ]////////////////////////////*/
+
+@media (max-width: 414px) {
+    body, html {
+        overflow-x: hidden;
+    }
+    body {
+        position: relative;
+    }
+    nav {
+        opacity: 1;
+        position: fixed;
+        z-index: 99;
+        left: -10px;
+        top: -37px;
+        color: white;
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height: 160px;
+        border-bottom: 6px solid lightgrey;
+        float: left;
+        width: 105%;
+    }
+    
+    .nav-links {
+        top: 0;
+        margin-top: 5px;
+        float: left;
+        margin-left: calc(0.5*12vw);
+        margin-right: 0;
+    }
+    
+    .nav-links a {
+     size: 20px;
+        margin-right: 5vw;
+        text-align: center;
+    }
+    
+    .main-title {
+        width: 190px;
+        font-size: 28px;
+        margin-top: 44px;
+        margin-left: 6%;
+        transform: rotate(0.8deg);
+        transition: 0.2s ease-out;
+    }
+    .subtitle {
+        float:left;
+        letter-spacing: 2px;
+        font-weight: 300;
+        width: 400px;
+        margin-left: 6%;
+        transform: rotate(0.8deg);
+        font-size: 18px;
+        margin-top: 0;
+    }
+    
+    .media-icons img {
+        height: auto;
+        width: 22px;
+    }
+
+    .media-icons {
+        color: white;
+        float: right;
+        transform: rotate(0.8deg);
+        margin-left: 17%;
+        top: 34%;
+        position: absolute;
+        height: 20px;
+        width: 120px;
+    }
+    
+    nav i {
+        display: block;
+    }
+
+    .media-icons img {
+        transition: 0.2s ease-out;
+    }
+
+    .icon {
+        margin: 0 15px 0 0;
+    }
+
+    .main-image{
+        right: -2vw;
+        top: 18vh;
+        max-width: 200vw;
+        height: 90%;
+        position: absolute;
+    }
+
+    .media-icons img:hover {
+        transform:scale(1.1);
+    }
+    
+    .frontpage-paragraph {
+        margin-top: 10px;
+        width: auto;
+        font-size: 16px;
+    }
+
+    h1 {
+        width: auto;
+        font-size: 22px;
+        letter-spacing: 3px;
+        text-align: left;
+    }
+    
+    h2 {
+        letter-spacing: 2px;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        color: slategray;
+        text-align: left;
+    }
+    
+    #frontpage-content-career {
+        width: auto;
+        top: 24vh;
+        left: 38vw;
+        height: auto;
+    }
+    
+    .inner-frontpage-paragraph {
+        display: none;
+    }
+    
+    
+    .still-in-dev {
+        animation-name: fadeIn;
+        animation-duration: 3s;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .frontpage-content {
+        top: 22vh;
+        left: 40vw;
+        position: absolute;
+        float: right;
+        width: 50vw;
+        height: 300px;
+    }
+    
+    footer span {
+        margin: 14px 0 0 15px;
+    }
+
+    
+}
