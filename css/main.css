@@ -263,13 +263,14 @@ h2 {
     font-size: 12px;
 }
 
-.html {width: 85%; background-color: #8BD095;}
-.css {width: 85%; background-color: #8BD095;}
+.python {width: 85%; background-color: #8BD095;}
+.java {width: 85%; background-color: #8BD095;}
+.html {width: 80%; background-color: #8BD095;}
+.css {width: 80%; background-color: #8BD095;}
 .js {width: 80%; background-color: #8BD095;}
-.java {width: 80%; background-color: #8BD095;}
-.python {width: 70%; background-color: #8BD095;}
-.r {width: 70%; background-color: #8BD095;}
-.sql {width: 70%; background-color: #8BD095;}
+.electron {width: 80%; background-color: #8BD095;}
+.r {width: 75%; background-color: #8BD095;}
+.sql {width: 75%; background-color: #8BD095;}
 
 .skills-container p {
     margin-top: 10px;
