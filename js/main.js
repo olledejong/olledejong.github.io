@@ -1,46 +1,23 @@
-/*globals $:false */
-$(document).ready(function () {
-    /**
-    * Underline current menu location
-    */
-    var url = window.location.href;
-    var navlinks$ = $(".nav-link");
-    console.log(navlinks$);
-    for (i = 0; i < navlinks$.length; i++) {
-        console.log(navlinks$[i].href);
-        console.log(url);
-        if (url.endsWith('/') && navlinks$[i].href.endsWith('index.html')) {
-            $(navlinks$[i]).css("border-bottom", "4px solid mediumseagreen");
-        }
-        if (navlinks$[i].href === url) {
-            $(navlinks$[i]).css("border-bottom", "4px solid mediumseagreen");
-        }
+$(function(){
+  $("#links > a").click(function(e) {
+    $("#content > div").hide()
+    const clickedId = $(e.target).attr("id")
+    const genId = "#content-" + clickedId
+    $(genId).css("display", "grid");
+  })
+
+  // social button clicks
+  $("#footer-icons i").click(function(e) {
+    switch($(e.target).attr("class")) {
+      case "fa-brands fa-instagram":
+        window.open('https://www.instagram.com/olledejong/')
+        break;
+      case "fa-brands fa-github":
+        window.open('https://github.com/olledejong')
+        break;
+      case "fa-brands fa-linkedin-in":
+        window.open('https://nl.linkedin.com/in/olledejong')
+        break;
     }
-
-    /**
-    * Subtitle cycle
-    */
-    var subtitles = ['Bio-Informatics (BSc)', 'Front-end and design enthousiast'];
-
-    textSequence(1);
-    function textSequence(i) {
-        if (subtitles.length > i) {
-            setTimeout(function() {
-                $(".subtitle").animate({
-                    opacity: 0
-                }, 400, function() {
-                    $(".subtitle").html(subtitles[i]);
-                });
-                $(".subtitle").animate({
-                    opacity: 1,
-                }, 400, function() {
-                    textSequence(++i);
-                });
-            }, 5000); // 5 seconds
-        } else if (subtitles.length == i) { // Loop
-            textSequence(0);
-        }
-
-    }
-
+  })
 });
