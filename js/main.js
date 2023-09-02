@@ -7,7 +7,7 @@ $(function(){
   })
 
   // social button clicks
-  $("#footer-icons i").click(function(e) {
+  $("footer i").click(function(e) {
     switch($(e.target).attr("class")) {
       case "fa-brands fa-instagram":
         window.open('https://www.instagram.com/olledejong/')
