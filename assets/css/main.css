@@ -248,11 +248,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 0 0 1vmin 0;
-    font-size: 1.3vmin;
+    font-size: 1.4vmin;
   }
 
   .education-tile > .tile-item {
-    font-size: 1.2vmin;
+    font-size: 1.3vmin;
     font-weight: normal;
     margin: 0 0 1vmin 0;
   }
