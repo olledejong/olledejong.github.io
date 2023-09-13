@@ -265,6 +265,14 @@
     margin-bottom: 6vmin;
   }
 
+  #container > #content > #content-contact > #contact-me {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+
   .regular_text_center {
     font-size: 1.5vmin;
     text-align: center;
