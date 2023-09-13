@@ -1,5 +1,5 @@
 $(function(){
-  $("#links > a").click(function(e) {
+  $("#links > a").on("click",(e) => {
     $("#content > div").hide()
     const clickedId = $(e.target).attr("id")
     const genId = "#content-" + clickedId
@@ -7,7 +7,7 @@ $(function(){
   })
 
   // social button clicks
-  $("footer i").click(function(e) {
+  $("footer i").on("click",(e) => {
     switch($(e.target).attr("class")) {
       case "fa-brands fa-instagram":
         window.open('https://www.instagram.com/olledejong/')
