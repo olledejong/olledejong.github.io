@@ -13,8 +13,8 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <script src="https://kit.fontawesome.com/e09e39bbdf.js" crossorigin="anonymous"></script>
 
   <meta name="theme-color" content="#fafafa">
@@ -23,7 +23,7 @@
 <div id="container-mobile">
   <span id="placeholder-text-one">Please open this website on a <br>tablet, laptop or desktop<span class="text-secondary">.</span> </span>
   <div class="image-inner">
-    <img class="image-me" src="img/IMG_1272nn.JPG" alt="">
+    <img class="image-me" src="assets/img/IMG_1272nn.JPG" alt="">
   </div>
   <span id="placeholder-text-two">Responsive version will be <br>available later <span class="text-secondary">:)</span> </span>
   <span id="placeholder-text-three">Cheers<span class="text-secondary">,</span> Olle</span>
@@ -34,7 +34,7 @@
       <a id="home">Home</a>
       <a id="about">About me</a>
       <a id="education">Education</a>
-      <a id="projects">Projects</a>
+      <a id="experience">Experience</a>
       <a id="contact">Contact</a>
     </div>
   </nav>
@@ -43,7 +43,7 @@
     <div id="content-home">
       <div id="home-image">
         <div class="image-inner">
-          <img class="image-me" src="img/IMG_1272nn.JPG" alt="">
+          <img class="image-me" src="assets/img/IMG_1272nn.JPG" alt="">
         </div>
       </div>
       <div id="home-text">
@@ -54,7 +54,7 @@
     <div id="content-about">
       <div id="about-image">
         <div class="image-inner">
-          <img class="image-me" src="img/IMG_1272nn.JPG" alt="">
+          <img class="image-me" src="assets/img/IMG_1272nn.JPG" alt="">
         </div>
       </div>
       <div id="about-text">
@@ -69,14 +69,47 @@
       </div>
     </div>
     <div id="content-education">
-
+      <div class="education-tile">
+        <span class="tile-title"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Senior general secondary education</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;C.S.G. Dingstede, Meppel</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Period: September 2010 - June 2016</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Study program: Science and Technology</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Study program: Science and Health</span>
+      </div>
+      <div class="education-tile">
+        <span class="tile-title"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;BSc Bio-informatics</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Hanze University of Applied Sciences, Groningen</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;September 2016 - March 2021</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Internship at the University Medical Center Groningen</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Internship at Ancora Health</span>
+      </div>
+      <div class="education-tile">
+        <span class="tile-title"><i class="fa-solid fa-check"></i>&nbsp;&nbsp;Pre-master Biology</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;University of Groningen, Groningen</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Period: September 2021 - June 2022</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Track: Biomolecular Sciences</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Thesis: Review about genome editing tools</span>
+      </div>
+      <div class="education-tile">
+        <span class="tile-title"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;MSc Biology</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;University of Groningen, Groningen</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Period: September 2022 - June 2024</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Track; Modeling in the Life Sciences</span>
+        <span class="tile-item"><i class="fa-solid fa-circle-dot"></i>&nbsp;&nbsp;&nbsp;Research project at Molecular Systems Biology group</span>
+      </div>
     </div>
-    <div id="content-projects">
+    <div id="content-experience">
 
     </div>
     <div id="content-contact">
-      <span class="regular_text_center">Reach out to me via my personal email address</span>
-      <span class="bold_text_center">olledejong@gmail.com</span>
+      <div class="image-inner">
+        <img class="image-me" src="assets/img/IMG_1272nn.JPG" alt="">
+      </div>
+      <div id="contact-me">
+        <span class="regular_text_center">Reach out to me via my personal email address</span>
+        <span class="bold_text_center">olledejong@gmail.com</span>
+      </div>
+
     </div>
   </div>
 
@@ -90,10 +123,8 @@
 </div>
 
 <!-- load scripts -->
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="assets/js/jquery_min.js"></script>
+<script src="assets/js/main.js"></script>
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>
   window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
