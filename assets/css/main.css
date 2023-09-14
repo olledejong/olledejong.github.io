@@ -126,6 +126,15 @@
     background: var(--primary); /* fallback for old browsers */
   }
 
+  /* Floating atoms on background */
+  i#a, i#b, i#c {
+    width: 15vmin;
+    height: 15vmin;
+    color: #64888b !important;
+    position: absolute;
+    font-size: 6vmin;
+  }
+
   /* container styling */
   #container {
     padding: 3vh;
@@ -168,7 +177,7 @@
     align-items: center;
     height: 6vmin;
     border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 
   #container > nav > #links > a {
@@ -234,27 +243,32 @@
   #container > #content > #content-education {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
-    grid-column-gap: 10vmin;
-    grid-row-gap: 9vmin;
+    grid-column-gap: 7vmin;
+    grid-row-gap: 6vmin;
   }
 
   #container > #content > #content-education > .education-tile {
     display: flex;
     flex-direction: column;
     min-height: 10vmin;
+    padding: 1.7vmin;
+    background: var(--secondary);
+    color: black;
+    border-radius: 1vmin;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    min-width: 34vmin;
   }
 
   .education-tile > .tile-title {
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin: 0 0 1vmin 0;
-    font-size: 1.4vmin;
+    font-size: 1.5vmin;
   }
 
   .education-tile > .tile-item {
-    font-size: 1.3vmin;
+    font-size: 1.35vmin;
+    margin: 0.5vmin 0 0 0;
     font-weight: normal;
-    margin: 0 0 1vmin 0;
   }
 
   .image-me {
@@ -322,7 +336,7 @@
     background: var(--secondary);
     border-radius: 50px;
     justify-self: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
 
   /* footer items styling */
