@@ -240,6 +240,7 @@
     display: grid;
   }
 
+  /* Education page */
   #container > #content > #content-education {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -259,17 +260,59 @@
     min-width: 34vmin;
   }
 
-  .education-tile > .tile-title {
+  #content-education > .education-tile > .tile-title {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.5vmin;
   }
 
-  .education-tile > .tile-item {
+  #content-education > .education-tile > .tile-item {
     font-size: 1.35vmin;
     margin: 0.5vmin 0 0 0;
     font-weight: normal;
   }
+
+  /* Experience tile */
+  #container > #content > #content-experience {
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 4vmin;
+    grid-row-gap: 5vmin;
+  }
+
+  #container > #content > #content-experience > .experience-tile {
+    display: flex;
+    flex-direction: column;
+    min-height: 12vmin;
+    padding: 1vmin 1.6vmin;
+    background: var(--secondary);
+    color: black;
+    border-radius: 1vmin;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    max-width: 40vmin;
+  }
+
+  #container > #content > #content-experience > .experience-tile > .tile-title {
+    letter-spacing: 1px;
+    font-size: 1.3vmin;
+    text-align: center;
+    margin: 0 0 0.2vmin 0;
+  }
+
+  #container > #content > #content-experience > .experience-tile > .tile-item {
+    font-size: 1.2vmin;
+    margin: 0.7vmin 0 0 0;
+    font-weight: normal;
+  }
+
+  #container > #content > #content-experience > .experience-tile > .tile-title > a > i {
+    cursor: pointer;
+    font-size: 1.8vmin;
+    clear: right;
+    float: right;
+  }
+
+  /* General */
 
   .image-me {
     width: 60%;
