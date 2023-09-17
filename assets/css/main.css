@@ -75,6 +75,10 @@
     background: var(--primary); /* fallback for old browsers */
   }
 
+  i#a, i#b, i#c {
+    display: none;
+  }
+
   #container {
     display: none;
   }
@@ -261,13 +265,13 @@
   }
 
   #content-education > .education-tile > .tile-title {
-    text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 1.5vmin;
+    font-size: 1.4vmin;
+    margin-bottom: 0.5vmin;
   }
 
   #content-education > .education-tile > .tile-item {
-    font-size: 1.35vmin;
+    font-size: 1.3vmin;
     margin: 0.5vmin 0 0 0;
     font-weight: normal;
   }
