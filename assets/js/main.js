@@ -120,3 +120,14 @@ let z = new RandomObjectMover(document.getElementById('c'), window);
 x.start();
 y.start();
 z.start();
+
+$(window).on('resize', function(){
+  console.log("Resized")
+  let x = new RandomObjectMover(document.getElementById('a'), window);
+  let y = new RandomObjectMover(document.getElementById('b'), window);
+  let z = new RandomObjectMover(document.getElementById('c'), window);
+
+  x.start();
+  y.start();
+  z.start();
+})
