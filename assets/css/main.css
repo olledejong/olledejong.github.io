@@ -247,7 +247,6 @@
   /* Education page */
   #container > #content > #content-education {
     grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
     grid-column-gap: 7vmin;
     grid-row-gap: 6vmin;
   }
@@ -279,7 +278,6 @@
   /* Experience tile */
   #container > #content > #content-experience {
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
     grid-column-gap: 4vmin;
     grid-row-gap: 5vmin;
   }
@@ -304,7 +302,7 @@
   }
 
   #container > #content > #content-experience > .experience-tile > .tile-item {
-    font-size: 1.2vmin;
+    font-size: 1.1vmin;
     margin: 0.7vmin 0 0 0;
     font-weight: normal;
   }
