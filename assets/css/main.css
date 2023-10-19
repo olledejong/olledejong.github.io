@@ -275,20 +275,43 @@
 
   /* Experience tile */
   #container > #content > #content-experience {
-    grid-template-columns: 33% 33% 33%;
+    font-size: 1.25vmin;
+    grid-template-columns: 66% 33%;
     grid-column-gap: 4vmin;
-    grid-row-gap: 5vmin;
   }
 
-  #container > #content > #content-experience > .experience-tile {
+  #container > #content > #content-experience > div {
+    display: grid;
+    background: var(--secondary);
+    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
+    padding: 2vmin 1.6vmin 1.2vmin 1.6vmin;
+    border-radius: 1vmin;
+    color: black;
+  }
+
+  #container > #content > #content-experience > #experience-former {
+    grid-template-columns: 50% 50%;
+  }
+
+  #container > #content > #content-experience > #experience-current {
     display: flex;
     flex-direction: column;
+  }
+
+  #container > #content > #content-experience > div > span {
+    grid-column: 1/3;
+    text-align: left;
+    font-size: 20px;
+    margin: 0 2vmin;
+    padding-bottom: 0.5vmin;
+    border-bottom: 2px solid;
+  }
+
+  #container > #content .experience-tile {
+    display: flex;
+    margin: 1vmin 2vmin;
+    flex-direction: column;
     min-height: 12vmin;
-    padding: 0.5vmin 1.6vmin 1.2vmin 1.6vmin;
-    background: var(--secondary);
-    color: black;
-    border-radius: 1vmin;
-    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 7px 13px -3px, rgba(0, 0, 0, 0.2) 0 -3px 0 inset;
     max-width: 40vmin;
     justify-content: space-evenly;
   }
@@ -304,11 +327,9 @@
     font-weight: normal;
   }
 
-  #container > #content > #content-experience > .experience-tile > .tile-title > a > i {
+  #container > #content > #content-experience .experience-tile > .tile-title > a > i {
     cursor: pointer;
-    font-size: 1.8vmin;
-    clear: right;
-    float: right;
+    font-size: 1.4vmin;
   }
 
   /* General */
