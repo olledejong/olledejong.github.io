@@ -254,23 +254,29 @@
   #container > #content > #content-education > .education-tile {
     display: flex;
     flex-direction: column;
-    min-height: 14.5vmin;
-    padding: 1vmin 1.6vmin;
+    width: auto;
+    padding: 1.5vmin 2.5vmin;
     background: var(--secondary);
     color: black;
     border-radius: 1vmin;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    justify-content: space-evenly;
   }
 
   #content-education > .education-tile > .tile-title {
+    margin: 0 0 0.5vmin 0;
     letter-spacing: 1px;
     font-size: 1.35vmin;
   }
 
+  #content-education > .education-tile > .tile-title > i {
+    clear: right;
+    float: right;
+  }
+
   #content-education > .education-tile > .tile-item {
-    font-size: 1.25vmin;
+    font-size: 1.3vmin;
     font-weight: normal;
+    margin: 0.5vmin 0vmin;
   }
 
   /* Experience tile */
@@ -301,7 +307,7 @@
   #container > #content > #content-experience > div > span {
     grid-column: 1/3;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.5vmin;
     margin: 0 2vmin;
     padding-bottom: 0.5vmin;
     border-bottom: 2px solid;
