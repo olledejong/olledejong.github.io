@@ -304,6 +304,10 @@
     flex-direction: column;
   }
 
+  #experience-current {
+    height: 100%;
+  }
+
   #container > #content > #content-experience > div > span {
     grid-column: 1/3;
     text-align: left;
